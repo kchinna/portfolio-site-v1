@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "Ubuntu", impact;
+  font-family: "Open Sans", sans-serif;
   background-color: darkslategray;
 }
 
@@ -102,13 +102,13 @@ h1 {
 
 @media (max-width: 575px) {
   .buttons {
-    height: 200px;
+    height: 250px;
   }
   .custom-row {
-    height: 210px;
+    height: 260px;
   }
   #spacer {
-    margin-top: 681px;
+    margin-top: 831px;
   }
 }
 
@@ -282,7 +282,6 @@ a {
 .subsection-content {
   font-size: 16px;
   margin-top: 5px;
-  text-indent: 25px;
 }
 
 .content .tech-used {
