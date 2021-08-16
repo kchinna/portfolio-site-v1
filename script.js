@@ -22,9 +22,10 @@ window.onload = function() {
 function parallax_height() {
     let scroll_top = $(this).scrollTop();
     let sample_section_top = $('.main-content').offset().top;
-    let header_height = $('.header-section').outerHeight();
+    let header_height = $('.header-section').outerHeight() - scroll_top - 20;
     $('.main-content').css({ 'margin-top': header_height});
-    $('.title-header').css({ height: header_height - scroll_top + 24});
+    // $('.title-header').css({ height: header_height - scroll_top + 24});
+    $('.title-header').css({ height: window.innerHeight});
 }
 parallax_height()
 
@@ -39,6 +40,19 @@ window.addEventListener('scroll', function(event) {
         toTop.classList.remove('active');
     }
 })
+
+
+// const nameTop = document.getElementById('titlename');
+// // nameTop.classList.add('active');
+// window.addEventListener('scroll', function(event) {
+//     if (window.pageYOffset > 200) {
+//         nameTop.style.visibility = "hidden";
+//     }
+//     else {
+//         nameTop.style.visibility = "visible";
+//     }
+// })
+
 
 window.onbeforeunload = () => {
     for(const form of document.getElementsByTagName('form')) {
