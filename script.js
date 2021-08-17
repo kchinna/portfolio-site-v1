@@ -22,7 +22,7 @@ window.onload = function() {
 function parallax_height() {
     let scroll_top = $(this).scrollTop();
     let sample_section_top = $('.main-content').offset().top;
-    let header_height = $('.header-section').outerHeight() - scroll_top + 20;
+    let header_height = $('.header-section').outerHeight() - scroll_top;
     $('.main-content').css({ 'margin-top': header_height});
     // $('.title-header').css({ height: header_height - scroll_top + 24});
     $('.title-header').css({ height: window.innerHeight});
