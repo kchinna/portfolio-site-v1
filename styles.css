@@ -160,6 +160,7 @@ h1 {
 
 #icons a:hover {
   color: #202124;
+  transform: scale(1.5);
 }
 
 .large {
@@ -270,6 +271,8 @@ a {
   padding: 0;
   font-size: 30px;
   font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .subsection {
