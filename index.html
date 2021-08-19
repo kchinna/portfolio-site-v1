@@ -25,6 +25,46 @@
   </head>
 
   <body>
+    <div class="menu">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light p-md-3">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="images/pfpedit.png" alt="Kanishk Chinna" />Kanishk
+            Chinna</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mx-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#resume">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#contact">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
     <div class="title-header">
       <div id="titlename" class="header-section">
         <h1>Kanishk Chinna</h1>
@@ -47,7 +87,7 @@
 
     <div class="main-body">
       <div class="main-content">
-        <div id="cardbg">
+        <!-- <div id="cardbg">
           <div
             class="
               row
@@ -61,33 +101,8 @@
               <div class="buttons">
                 <div class="large">
                   <h2>
-                    Some of the <span id="one-color">Amazing</span> Things I've
-                    Worked On.
-                  </h2>
-                </div>
-
-                <a href="#projects"><div class="learn-more">Projects</div></a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-sm-6 custom-col">
-              <div class="buttons">
-                <div class="large">
-                  <h2>
-                    2 Words: <span id="two-color">Hardworking and Driven</span>.
-                  </h2>
-                </div>
-
-                <a href="#resume"><div class="learn-more">Resume</div></a>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-sm-6 custom-col">
-              <div class="buttons">
-                <div class="large">
-                  <h2>
                     Take a Look at What Makes me
-                    <span id="three-color">Tick.</span>
+                    <span class="one-color">Tick.</span>
                   </h2>
                 </div>
 
@@ -99,7 +114,33 @@
               <div class="buttons">
                 <div class="large">
                   <h2>
-                    <span id="four-color">Reach Out via Email.</span> I'll be
+                    Some of the <span class="two-color">Amazing</span> Things
+                    I've Worked On.
+                  </h2>
+                </div>
+
+                <a href="#projects"><div class="learn-more">Projects</div></a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 custom-col">
+              <div class="buttons">
+                <div class="large">
+                  <h2>
+                    2 Words:
+                    <span class="three-color">Hardworking and Driven</span>.
+                  </h2>
+                </div>
+
+                <a href="#resume"><div class="learn-more">Resume</div></a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 custom-col">
+              <div class="buttons">
+                <div class="large">
+                  <h2>
+                    <span class="four-color">Reach Out via Email.</span> I'll be
                     Sure to Reply.
                   </h2>
                 </div>
@@ -108,13 +149,13 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div id="spacer"></div>
 
         <div id="about">
           <div class="content">
-            <h2>About Me</h2>
+            <h2 class="one-color">About Me</h2>
 
             <div class="subsection">
               <p class="subsection-content">
@@ -134,9 +175,93 @@
 
         <div id="projects">
           <div class="content">
-            <h2>Projects</h2>
+            <h2 class="two-color">Projects</h2>
 
-            <div class="subsection">
+            <div
+              class="
+                row
+                proj-row
+                justify-content-center
+                align-items-center
+                gx-0
+              "
+            >
+              <div class="col-lg-6 col-sm-12 proj-col">
+                <div class="proj-buttons">
+                  <div class="proj-body">
+                    <h3 class="one-color">Pixel Recoloring</h3>
+                    <p class="subsection-content">
+                      Detects black pixels within a certain threshold in an
+                      image and converts it into a user inputted color. GUI
+                      allows for user to provide link to image and RGB values.
+                    </p>
+                    <p class="tech-used">
+                      Uses: Python, OpenCV, NumPy, Tkinter
+                    </p>
+
+                    <a href="#projects"
+                      ><div class="learn-more">Learn More</div></a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-sm-12 proj-col">
+                <div class="proj-buttons">
+                  <div class="proj-body">
+                    <h3 class="two-color">Tic-Tac-Toe Discord Bot</h3>
+                    <p class="subsection-content">
+                      The classic game of tic-tac-toe brought to discord with a
+                      more user friendly and visually appealing form factor.
+                    </p>
+                    <p class="tech-used">Uses: Python, Discord.py</p>
+
+                    <a href="#resume"
+                      ><div class="learn-more">Learn More</div></a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-sm-12 proj-col">
+                <div class="proj-buttons">
+                  <div class="proj-body">
+                    <h3 class="three-color">Portfolio Website</h3>
+                    <p class="subsection-content">
+                      My portfolio website takes insipiration from the google
+                      store and presents the viewer with a summary of my
+                      projects, my resume, my contact, and a little information
+                      about me.
+                    </p>
+                    <p class="tech-used">Uses: HTML, CSS, Javascript, jQuery</p>
+
+                    <a href="#about"
+                      ><div class="learn-more">Learn More</div></a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-sm-12 proj-col">
+                <div class="proj-buttons">
+                  <div class="proj-body">
+                    <h3 class="four-color">Complex-Calculator</h3>
+                    <p class="subsection-content">
+                      The complex-calculator uses object oriented programming
+                      concepts to create a set of methods that allow the user to
+                      complete mathematical operations with complex numbers.
+                    </p>
+                    <p class="tech-used">Uses: Java</p>
+
+                    <a href="#contact"
+                      ><div class="learn-more">Learn More</div></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="subsection">
               <h3>Pixel Recoloring</h3>
               <p class="subsection-content">
                 Detects black pixels within a certain threshold in an image and
@@ -173,13 +298,13 @@
                 mathematical operations with complex numbers.
               </p>
               <p class="tech-used">Uses: Java</p>
-            </div>
+            </div> -->
           </div>
         </div>
 
         <div id="resume">
           <div class="content">
-            <h2>Resume</h2>
+            <h2 class="three-color">Resume</h2>
 
             <div class="subsection">
               <h3 class="sub-title">Skills</h3>
@@ -240,14 +365,14 @@
               <h4 class="specifics">Irvington High School</h4>
               <p class="dates">August 2017 - June 2021</p>
               <h4 class="specifics">University of Maryland - College Park</h4>
-              <p class="dates">August 2021</p>
+              <p class="dates">August 2021 - May 2025</p>
             </div>
           </div>
         </div>
 
         <div id="contact">
           <div class="content">
-            <h2>Contact Me</h2>
+            <h2 class="four-color">Contact Me</h2>
 
             <div class="subsection">
               <form action="https://formspree.io/f/xayadpgl" method="POST">

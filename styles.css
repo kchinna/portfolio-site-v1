@@ -22,6 +22,10 @@ body {
   background: cover;
   background-repeat: no-repeat;
   background-image: url(https://wallpaperboat.com/wp-content/uploads/2020/04/minimalist-4k-wallpaper-1920x1080-14.jpg);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .title-header::before {
@@ -39,11 +43,10 @@ body {
 
 .header-section {
   position: relative;
-  padding: 5.5%;
+  padding: 0%;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  color: white;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 
   display: flex;
@@ -56,6 +59,7 @@ h1 {
   font-weight: 700;
   font-size: 65px;
   text-align: center;
+  color: white;
 }
 
 .main-body {
@@ -97,13 +101,14 @@ h1 {
   margin-right: 40px;
 }
 
-#cardbg {
+/* #cardbg {
   padding-top: 60px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-}
+} */
 
-.buttons {
+.buttons,
+.proj-buttons {
   width: 95%;
   margin: 0;
   background-color: #f1f3f4;
@@ -117,15 +122,9 @@ h1 {
   position: relative;
 }
 
-#spacer {
+/* #spacer {
   padding-top: 60px;
-}
-
-@media (max-width: 991px) {
-  #spacer {
-    padding-top: 350px;
-  }
-}
+} */
 
 @media (max-width: 575px) {
   .buttons {
@@ -133,9 +132,6 @@ h1 {
   }
   .custom-row {
     height: 260px;
-  }
-  #spacer {
-    padding-top: 831px;
   }
 }
 
@@ -192,7 +188,8 @@ h1 {
   bottom: 30px; */
 }
 
-.buttons a {
+.buttons a,
+.proj-buttons a {
   position: absolute;
   bottom: 30px;
 }
@@ -202,19 +199,19 @@ h1 {
   color: #f1f3f4;
 }
 
-#one-color {
+.one-color {
   color: orange;
 }
 
-#two-color {
+.two-color {
   color: blue;
 }
 
-#three-color {
+.three-color {
   color: orangered;
 }
 
-#four-color {
+.four-color {
   color: green;
 }
 
@@ -260,7 +257,7 @@ a {
 }
 
 .content {
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
   margin-right: 40px;
   margin-left: 40px;
   /* background-color: black; */
@@ -273,6 +270,7 @@ a {
   font-weight: bold;
   text-align: center;
   margin-bottom: 15px;
+  padding-top: 80px;
 }
 
 .subsection {
@@ -360,4 +358,107 @@ input {
 .submit:hover {
   background-color: #202124;
   color: #f1f3f4;
+}
+
+#contact {
+  padding-bottom: 80px;
+}
+
+.proj-row {
+  height: 300px;
+  padding-bottom: 610px;
+}
+
+.proj-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 991px) {
+  .proj-row {
+    padding-bottom: 1235px;
+  }
+}
+
+.proj-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.proj-body h3 {
+  font-size: 25px;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+/* nav {
+  background: white;
+}
+
+nav ul a {
+  font-size: 2vw;
+  font-weight: 400;
+  font-family: "Source Code Pro", monospace;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.navbar-brand {
+  font-size: 2vw !important;
+  font-weight: 400;
+  font-family: "Source Code Pro", monospace;
+} */
+
+nav {
+  background: #f1f3f4;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  /* height: 70px; */
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  font-size: 20px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-brand img {
+  width: 40px;
+  padding: 0;
+  margin-bottom: 4px;
+  padding-right: 10px;
+}
+
+.navbar-brand {
+  color: #202124 !important;
+}
+.navbar-brand:hover {
+  transform: scale(1.03);
+}
+
+.nav-item a {
+  color: #202124 !important;
+  text-align: center;
+}
+.nav-item a:hover {
+  transform: scale(1.1);
 }
