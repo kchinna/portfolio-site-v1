@@ -1,4 +1,5 @@
 history.scrollRestoration = "manual";
+console.log("working")
 
 $(window).on('beforeunload', function(){
       $(window).scrollTop();
@@ -8,7 +9,7 @@ function parallax_height() {
     let scroll_top = $(this).scrollTop();
     let sample_section_top = $('.main-content').offset().top;
     // let header_height = $('.header-section').outerHeight() - scroll_top;
-    $('.main-content').css({ 'margin-top': window.innerHeight});
+    $('.main-content').css({ 'margin-top': window.innerHeight + 10});
     // $('.title-header').css({ height: header_height - scroll_top + 24});
     $('.title-header').css({ height: window.innerHeight});
 }
@@ -35,6 +36,7 @@ window.onbeforeunload = () => {
 
 $(document).ready(function(){
     let isChrome = navigator.userAgent.indexOf('Chrome')
+    console.log(isChrome)
     if (isChrome <= -1) {
         // Add smooth scrolling to all links
         $("a").on('click', function(event) {
