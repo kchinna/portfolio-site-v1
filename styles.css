@@ -5,12 +5,17 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: darkslategray;
+  background-color: #f1f3f4;
 }
 
 #home {
   color: transparent;
   margin-top: 0px;
+}
+
+#myBtn {
+  border: 0px;
+  background-color: transparent;
 }
 
 .title-header {
@@ -182,7 +187,7 @@ h1 {
   /* font-weight: lighter; */
 }
 
-.learn-more {
+.proj-body a {
   width: 150px;
   height: 40px;
   background-color: #f1f3f4;
@@ -210,14 +215,15 @@ h1 {
   bottom: 30px;
 }
 
-.proj-body a:hover {
-  background-color: #202124;
-  color: #f1f3f4;
-}
-
 .proj-body a:visited {
   background-color: #f1f3f4;
   color: #202124;
+}
+
+.proj-body a:hover {
+  background-color: #202124;
+  color: #f1f3f4;
+  color: yellow;
 }
 
 .one-color {
@@ -258,6 +264,11 @@ h1 {
   align-items: center;
 }
 
+#top:visited {
+  background-color: #f1f3f4;
+  color: #202124;
+}
+
 #top:hover {
   background-color: #202124;
   color: #f1f3f4;
@@ -266,11 +277,6 @@ h1 {
 #top.active {
   pointer-events: auto;
   opacity: 1;
-}
-
-#top:visited {
-  background-color: #f1f3f4;
-  color: #202124;
 }
 
 a {

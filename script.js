@@ -27,6 +27,19 @@ window.addEventListener('scroll', function(event) {
     }
 })
 
+function topFunction() {
+    let isChrome = navigator.userAgent.indexOf('Chrome')
+    if (isChrome <= -1) {
+        console.log("home clicked")
+        window.scrollTo(0,0);
+        // $('body').scrollTop(0);
+        // document.body.scrollTop = 0;
+    }
+    else {
+        document.documentElement.scrollTop = 0;
+    }
+}
+
 
 window.onbeforeunload = () => {
     for(const form of document.getElementsByTagName('form')) {
@@ -41,24 +54,24 @@ $(document).ready(function(){
         // Add smooth scrolling to all links
         $("a").on('click', function(event) {
     
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-    
-            // Store hash
-            var hash = this.hash;
-    
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-            scrollTop: $(hash).offset().top
-            }, 800, function(){
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
         
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-            });
-        } // End if
+                // Store hash
+                var hash = this.hash;
+        
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                scrollTop: $(hash).offset().top
+                }, 800, function(){
+            
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+                });
+            }
         });
     }
 });
