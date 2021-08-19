@@ -96,7 +96,7 @@ h1 {
 }
 
 .custom-row {
-  height: 300px;
+  height: 320px;
   margin-left: 40px;
   margin-right: 40px;
 }
@@ -112,7 +112,7 @@ h1 {
   width: 95%;
   margin: 0;
   background-color: #f1f3f4;
-  height: 290px;
+  height: 310px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 
@@ -127,11 +127,17 @@ h1 {
 } */
 
 @media (max-width: 575px) {
-  .buttons {
-    height: 250px;
+  /* .buttons {
+    height: 290px;
   }
   .custom-row {
-    height: 260px;
+    height: 300px;
+  } */
+  .proj-buttons {
+    height: 390px;
+  }
+  .custom-row {
+    height: 400px;
   }
 }
 
@@ -172,7 +178,7 @@ h1 {
 }
 
 .learn-more {
-  width: 100px;
+  width: 150px;
   height: 40px;
   background-color: #f1f3f4;
   border-style: solid;
@@ -186,6 +192,11 @@ h1 {
 
   /* position: absolute;
   bottom: 30px; */
+}
+
+.learn-more i {
+  margin-left: 10px;
+  font-size: 20px;
 }
 
 .buttons a,
@@ -315,6 +326,8 @@ a {
 .content .tech-used {
   font-size: 13px;
   margin: 0;
+  position: absolute;
+  bottom: 95px;
 }
 
 .regular-inp {
@@ -379,6 +392,10 @@ input {
 @media (max-width: 991px) {
   .proj-row {
     padding-bottom: 1235px;
+  }
+
+  #resume {
+    margin-top: 400px;
   }
 }
 
