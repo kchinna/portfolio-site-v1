@@ -25,13 +25,13 @@ body {
   width: 100%;
   /* background-image: url(https://webmadewell.com/wp-content/uploads/2018/01/img-bg-sample-parallax-header.jpg);
   background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2019/09/04/1337713/d56666c7d4ef056f4367db506d063f5c-700.jpg);
-  background-image: url(); */
-  background-image: url(https://wallpaperaccess.com/full/38582.jpg);
-  /* background-image: url(https://www.teahub.io/photos/full/13-136885_sunset-mountain-wallpaper-4k.png); */
+  background-image: url();
+  background-image: url(https://wallpaperaccess.com/full/38582.jpg); */
+  background-image: url(https://www.teahub.io/photos/full/13-136885_sunset-mountain-wallpaper-4k.png);
   background-position: center;
   background: cover;
   background-repeat: no-repeat;
-  background-image: url(https://wallpaperboat.com/wp-content/uploads/2020/04/minimalist-4k-wallpaper-1920x1080-14.jpg);
+  /* background-image: url(https://wallpaperboat.com/wp-content/uploads/2020/04/minimalist-4k-wallpaper-1920x1080-14.jpg); */
 
   display: flex;
   align-items: center;
