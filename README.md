@@ -10,3 +10,5 @@ Learn a little bit about my goals in the "about me" section <br>
 Take a look at some of the projects I've worked on in the "projects" section <br>
 You can find my resume in the aptly named "resume" section <br>
 And lastly, you can reach out to me with the built in form under the "contact me" section <br>
+
+<img src="./images/portfolio-v1.jpg" style="width: 500px;"/>
